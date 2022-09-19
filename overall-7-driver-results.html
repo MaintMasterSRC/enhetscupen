@@ -29,7 +29,7 @@
 
 		<h3 class="w3-hide-large navTitle bold" style="display:block;">
 			driver - overall
-			<br><span id="countdown"></span>
+			
 		</h3>
 
 
@@ -59,13 +59,6 @@
 		
 
 
-
-		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
-			<div class="logo">
-				<img src="./assets/country-flags/fin.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
-			</div>
-			<span id="countdown2"></span>
-		</div>
 	</div>
 
 	<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
@@ -110,39 +103,6 @@
 			</a>
 	</div>
 </div>
-<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("2022-09-18T22:00:00Z").getTime();
-
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-
-	// Get today's date and time
-	var now = new Date().getTime();
-
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	// Output the result in an element with id="demo"
-	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-	+ minutes + "m " + seconds + "s ";
-	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
-	+ minutes + "m " + seconds + "s ";
-
-	// If the count down is over, write some text
-	if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("countdown").innerHTML = "Event Ended";
-		document.getElementById("countdown2").innerHTML = "Event Ended";
-	}
-	}, 1000);
-</script>
 
 <div id="container">
     <div id="flexContainer">
@@ -174,44 +134,44 @@
                     <tr>
                         <td>1</td>
                         <td>
-                            <img src="./assets/country-flags/nor.png" style="max-width:1.5em; max-height:1.5em;" alt="nor" title="nor"/>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Morten Gravermoen</td>
-                            <td>A</td>
-                        <td>07:18.529</td>
+                        <td class="text-left bold">Oskar Norlin</td>
+                            <td>Elit</td>
+                        <td>07:17.472</td>
                         <td>--</td>
-                        <td>36:05.320</td>
+                        <td>35:01.641</td>
                         <td>--</td>
                             <td>5</td>
-                        <td>30</td>
-                        <td class="bold">35</td>
+                        <td>15</td>
+                        <td class="bold">20</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Björn Wermelin</td>
-                            <td>A</td>
-                        <td>07:34.259</td>
-                        <td>+00:00:15.730</td>
-                        <td>36:12.613</td>
-                        <td>+00:00:07.293</td>
+                        <td class="text-left bold">Johan Olsson</td>
+                            <td>Elit</td>
+                        <td>07:24.553</td>
+                        <td>+00:00:07.081</td>
+                        <td>35:25.415</td>
+                        <td>+00:00:23.774</td>
                             <td>4</td>
-                        <td>27</td>
-                        <td class="bold">31</td>
+                        <td>13</td>
+                        <td class="bold">17</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                            <img src="./assets/country-flags/nor.png" style="max-width:1.5em; max-height:1.5em;" alt="nor" title="nor"/>
                         </td>
-                        <td class="text-left bold">Martin Zirnsack</td>
-                            <td>B</td>
-                        <td>07:51.421</td>
-                        <td>+00:00:32.892</td>
-                        <td>36:59.893</td>
-                        <td>+00:00:54.573</td>
+                        <td class="text-left bold">Morten Gravermoen</td>
+                            <td>A</td>
+                        <td>07:18.529</td>
+                        <td>+00:00:01.057</td>
+                        <td>36:05.320</td>
+                        <td>+00:01:03.679</td>
                             <td>5</td>
                         <td>30</td>
                         <td class="bold">35</td>
@@ -221,12 +181,12 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Staffan Magnusson</td>
-                            <td>B</td>
-                        <td>07:57.700</td>
-                        <td>+00:00:39.171</td>
-                        <td>37:53.012</td>
-                        <td>+00:01:47.692</td>
+                        <td class="text-left bold">Björn Wermelin</td>
+                            <td>A</td>
+                        <td>07:34.259</td>
+                        <td>+00:00:16.787</td>
+                        <td>36:12.613</td>
+                        <td>+00:01:10.972</td>
                             <td>4</td>
                         <td>27</td>
                         <td class="bold">31</td>
@@ -236,27 +196,27 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Jyrg86</td>
-                            <td>Open</td>
-                        <td>08:28.060</td>
-                        <td>+00:01:09.531</td>
-                        <td>38:05.643</td>
-                        <td>+00:02:00.323</td>
+                        <td class="text-left bold">Martin Zirnsack</td>
+                            <td>B</td>
+                        <td>07:51.421</td>
+                        <td>+00:00:33.949</td>
+                        <td>36:59.893</td>
+                        <td>+00:01:58.252</td>
                             <td>5</td>
-                        <td>15</td>
-                        <td class="bold">20</td>
+                        <td>30</td>
+                        <td class="bold">35</td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Lars Wiik</td>
+                        <td class="text-left bold">Andreas Dahlin</td>
                             <td>A</td>
-                        <td>09:30.327</td>
-                        <td>+00:02:11.798</td>
-                        <td>41:08.124</td>
-                        <td>+00:05:02.804</td>
+                        <td>07:41.952</td>
+                        <td>+00:00:24.480</td>
+                        <td>37:02.126</td>
+                        <td>+00:02:00.485</td>
                             <td>3</td>
                         <td>25</td>
                         <td class="bold">28</td>
@@ -266,108 +226,348 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Tom Pettersson</td>
-                            <td>C</td>
-                        <td>09:12.102</td>
-                        <td>+00:01:53.573</td>
-                        <td>42:19.478</td>
-                        <td>+00:06:14.158</td>
-                            <td>5</td>
-                        <td>30</td>
-                        <td class="bold">35</td>
+                        <td class="text-left bold">Johan Jansson</td>
+                            <td>A</td>
+                        <td>08:03.978</td>
+                        <td>+00:00:46.506</td>
+                        <td>37:36.303</td>
+                        <td>+00:02:34.662</td>
+                            <td>2</td>
+                        <td>24</td>
+                        <td class="bold">26</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Johan Siim</td>
+                        <td class="text-left bold">Staffan Magnusson</td>
                             <td>B</td>
-                        <td>30:00.000</td>
-                        <td>+00:22:41.471</td>
-                        <td>01:55:25.501</td>
-                        <td>+01:19:20.181</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold">DQ</td>
+                        <td>07:57.700</td>
+                        <td>+00:00:40.228</td>
+                        <td>37:53.012</td>
+                        <td>+00:02:51.371</td>
+                            <td>4</td>
+                        <td>27</td>
+                        <td class="bold">31</td>
                     </tr>
                     <tr>
                         <td>9</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Henrik Andersson</td>
-                            <td>Elit</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Jyrg86</td>
+                            <td>Open</td>
+                        <td>08:28.060</td>
+                        <td>+00:01:10.588</td>
+                        <td>38:05.643</td>
+                        <td>+00:03:04.002</td>
+                            <td>5</td>
+                        <td>15</td>
+                        <td class="bold">20</td>
                     </tr>
                     <tr>
                         <td>10</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Oskar Norlin</td>
-                            <td>Elit</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Joakim Ottosson</td>
+                            <td>A</td>
+                        <td>08:55.114</td>
+                        <td>+00:01:37.642</td>
+                        <td>39:09.020</td>
+                        <td>+00:04:07.379</td>
+                            <td>1</td>
+                        <td>23</td>
+                        <td class="bold">24</td>
                     </tr>
                     <tr>
                         <td>11</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Jimmy Norr Kambrink</td>
-                            <td>Elit</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Rickard Persson</td>
+                            <td>C</td>
+                        <td>08:07.335</td>
+                        <td>+00:00:49.863</td>
+                        <td>39:58.542</td>
+                        <td>+00:04:56.901</td>
+                            <td>5</td>
+                        <td>30</td>
+                        <td class="bold">35</td>
                     </tr>
                     <tr>
                         <td>12</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Johan Olsson</td>
-                            <td>Elit</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Squier</td>
+                            <td>Open</td>
+                        <td>09:31.843</td>
+                        <td>+00:02:14.371</td>
+                        <td>40:09.931</td>
+                        <td>+00:05:08.290</td>
+                            <td>4</td>
+                        <td>13</td>
+                        <td class="bold">17</td>
                     </tr>
                     <tr>
                         <td>13</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Tomas Nordins</td>
-                            <td>Elit</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
+                        <td class="text-left bold">Lars Wiik</td>
+                            <td>A</td>
+                        <td>09:30.327</td>
+                        <td>+00:02:12.855</td>
+                        <td>41:08.124</td>
+                        <td>+00:06:06.483</td>
                             <td></td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td>21</td>
+                        <td class="bold">21</td>
                     </tr>
                     <tr>
                         <td>14</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Alexander Magnusson</td>
+                            <td>B</td>
+                        <td>08:58.382</td>
+                        <td>+00:01:40.910</td>
+                        <td>42:17.542</td>
+                        <td>+00:07:15.901</td>
+                            <td>3</td>
+                        <td>25</td>
+                        <td class="bold">28</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Tom Pettersson</td>
+                            <td>C</td>
+                        <td>09:12.102</td>
+                        <td>+00:01:54.630</td>
+                        <td>42:19.478</td>
+                        <td>+00:07:17.837</td>
+                            <td>4</td>
+                        <td>27</td>
+                        <td class="bold">31</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Magnus Carlsson</td>
+                            <td>B</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:00:19.115</td>
+                        <td>+00:25:17.474</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Fredrik Eklöf</td>
+                            <td>B</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:01:14.676</td>
+                        <td>+00:26:13.035</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Thomas Dahn</td>
+                            <td>A</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:09:39.972</td>
+                        <td>+00:34:38.331</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Tomas Nordins</td>
+                            <td>Elit</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:33:47.960</td>
+                        <td>+00:58:46.319</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jonas Lund</td>
+                            <td>B</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:45:02.685</td>
+                        <td>+01:10:01.044</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">A Hillerström</td>
+                            <td>C</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:47:28.462</td>
+                        <td>+01:12:26.821</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Johan Siim</td>
+                            <td>B</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:55:25.501</td>
+                        <td>+01:20:23.860</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DQ</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jesper Persson</td>
+                            <td>C</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:56:40.619</td>
+                        <td>+01:21:38.978</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Peter Danielsson</td>
+                            <td>A</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:07:04.888</td>
+                        <td>+01:32:03.247</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Henrik Andersson</td>
+                            <td>Elit</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:07:19.888</td>
+                        <td>+01:32:18.247</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Joel Dahl</td>
+                            <td>C</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:30:00.000</td>
+                        <td>+01:54:58.359</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DQ</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">L Backlund</td>
+                            <td>Open</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:30:00.000</td>
+                        <td>+01:54:58.359</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Faersking</td>
+                            <td>Open</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:30:00.000</td>
+                        <td>+01:54:58.359</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Jimmy Norr Kambrink</td>
+                            <td>Elit</td>
+                        <td>15:00:00.000</td>
+                        <td>+14:52:42.528</td>
+                        <td>23:59:59.000</td>
+                        <td>+23:24:57.359</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -379,10 +579,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>15</td>
+                        <td>31</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -394,10 +594,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>16</td>
+                        <td>32</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -409,10 +609,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>17</td>
+                        <td>33</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -424,55 +624,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>18</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Joakim Ottosson</td>
-                            <td>A</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>19</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Peter Danielsson</td>
-                            <td>A</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>20</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Thomas Dahn</td>
-                            <td>A</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>21</td>
+                        <td>34</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -484,40 +639,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>22</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Andreas Dahlin</td>
-                            <td>A</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>23</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Johan Jansson</td>
-                            <td>A</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>24</td>
+                        <td>35</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -529,10 +654,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>25</td>
+                        <td>36</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -544,10 +669,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>26</td>
+                        <td>37</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -559,10 +684,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>27</td>
+                        <td>38</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -574,10 +699,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>28</td>
+                        <td>39</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -589,10 +714,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>29</td>
+                        <td>40</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -604,10 +729,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>30</td>
+                        <td>41</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -619,10 +744,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>31</td>
+                        <td>42</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -634,10 +759,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>32</td>
+                        <td>43</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -649,10 +774,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>33</td>
+                        <td>44</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -664,55 +789,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>34</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Jonas Lund</td>
-                            <td>B</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>35</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Alexander Magnusson</td>
-                            <td>B</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>36</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Fredrik Eklöf</td>
-                            <td>B</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>37</td>
+                        <td>45</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -724,10 +804,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>38</td>
+                        <td>46</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -739,25 +819,25 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>39</td>
+                        <td>47</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Stefan Magnusson</td>
                             <td>B</td>
                         <td>15:00:00.000</td>
-                        <td>N/A</td>
+                        <td>+14:52:42.528</td>
                         <td>23:59:59.000</td>
-                        <td>N/A</td>
+                        <td>+23:24:57.359</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>40</td>
+                        <td>48</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -769,10 +849,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>41</td>
+                        <td>49</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -784,10 +864,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>42</td>
+                        <td>50</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -799,10 +879,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>43</td>
+                        <td>51</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -814,10 +894,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>44</td>
+                        <td>52</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -829,25 +909,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>45</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Magnus Carlsson</td>
-                            <td>B</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>46</td>
+                        <td>53</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -859,10 +924,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>47</td>
+                        <td>54</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -874,10 +939,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>48</td>
+                        <td>55</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -889,25 +954,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>49</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Jesper Persson</td>
-                            <td>C</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>50</td>
+                        <td>56</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -919,10 +969,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>51</td>
+                        <td>57</td>
                         <td>
                             <img src="./assets/country-flags/fin.png" style="max-width:1.5em; max-height:1.5em;" alt="fin" title="fin"/>
                         </td>
@@ -934,25 +984,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>52</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Rickard Persson</td>
-                            <td>C</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>53</td>
+                        <td>58</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -964,25 +999,25 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>54</td>
+                        <td>59</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Thomas Rignell</td>
                             <td>C</td>
                         <td>15:00:00.000</td>
-                        <td>N/A</td>
+                        <td>+14:52:42.528</td>
                         <td>23:59:59.000</td>
-                        <td>N/A</td>
+                        <td>+23:24:57.359</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNF</td>
                     </tr>
                     <tr>
-                        <td>55</td>
+                        <td>60</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -994,10 +1029,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>56</td>
+                        <td>61</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1009,10 +1044,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>57</td>
+                        <td>62</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1024,10 +1059,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>58</td>
+                        <td>63</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1039,10 +1074,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>59</td>
+                        <td>64</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1054,25 +1089,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>60</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">L Backlund</td>
-                            <td>Open</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>61</td>
+                        <td>65</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -1084,25 +1104,10 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                     <tr>
-                        <td>62</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Squier</td>
-                            <td>Open</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                            <td></td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>63</td>
+                        <td>66</td>
                         <td>
                             <img src="./assets/country-flags/prt.png" style="max-width:1.5em; max-height:1.5em;" alt="prt" title="prt"/>
                         </td>
@@ -1114,13 +1119,13 @@
                         <td>N/A</td>
                             <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                 </tbody>
 
             </table>
             <div style="margin:0 auto; text-align:center;">
-                <p>last updated at: 2022-09-16T07:07:11Z</p>
+                <p>last updated at: 2022-09-19T04:54:12Z</p>
             </div>
         </div>
     </div>

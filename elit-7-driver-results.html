@@ -29,7 +29,7 @@
 
 		<h3 class="w3-hide-large navTitle bold" style="display:block;">
 			driver - Elit
-			<br><span id="countdown"></span>
+			
 		</h3>
 
 
@@ -59,13 +59,6 @@
 		
 
 
-
-		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
-			<div class="logo">
-				<img src="./assets/country-flags/fin.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
-			</div>
-			<span id="countdown2"></span>
-		</div>
 	</div>
 
 	<div id="mobileNav" class="w3-bar-block w3-black w3-hide w3-hide-large" style="overflow-y:scroll;max-height:95vh;">
@@ -110,39 +103,6 @@
 			</a>
 	</div>
 </div>
-<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("2022-09-18T22:00:00Z").getTime();
-
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-
-	// Get today's date and time
-	var now = new Date().getTime();
-
-	// Find the distance between now and the count down date
-	var distance = countDownDate - now;
-
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-	// Output the result in an element with id="demo"
-	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-	+ minutes + "m " + seconds + "s ";
-	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
-	+ minutes + "m " + seconds + "s ";
-
-	// If the count down is over, write some text
-	if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("countdown").innerHTML = "Event Ended";
-		document.getElementById("countdown2").innerHTML = "Event Ended";
-	}
-	}, 1000);
-</script>
 
 <div id="container">
     <div id="flexContainer">
@@ -164,6 +124,7 @@
                     <td>Diff</td>
                     <td>Total</td>
                     <td>Diff</td>
+                        <td>PS Points</td>
                     <td>Points</td>
                     <td>Total Points</td>
                 </tr>
@@ -174,29 +135,59 @@
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Henrik Andersson</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Oskar Norlin</td>
+                        <td>07:17.472</td>
+                        <td>--</td>
+                        <td>35:01.641</td>
+                        <td>--</td>
+                            <td>5</td>
+                        <td>15</td>
+                        <td class="bold">20</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
-                        <td class="text-left bold">Oskar Norlin</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="text-left bold">Johan Olsson</td>
+                        <td>07:24.553</td>
+                        <td>+00:00:07.081</td>
+                        <td>35:25.415</td>
+                        <td>+00:00:23.774</td>
+                            <td>4</td>
+                        <td>13</td>
+                        <td class="bold">17</td>
                     </tr>
                     <tr>
                         <td>3</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Tomas Nordins</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>01:33:47.960</td>
+                        <td>+00:58:46.319</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
+                        </td>
+                        <td class="text-left bold">Henrik Andersson</td>
+                        <td>30:00.000</td>
+                        <td>+00:22:42.528</td>
+                        <td>02:07:19.888</td>
+                        <td>+01:32:18.247</td>
+                            <td></td>
+                        <td></td>
+                        <td class="bold">DNF</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
                         <td>
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
@@ -205,34 +196,9 @@
                         <td>N/A</td>
                         <td>23:59:59.000</td>
                         <td>N/A</td>
+                            <td></td>
                         <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Johan Olsson</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                        <td></td>
-                        <td class="bold"></td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>
-                            <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
-                        </td>
-                        <td class="text-left bold">Tomas Nordins</td>
-                        <td>15:00:00.000</td>
-                        <td>N/A</td>
-                        <td>23:59:59.000</td>
-                        <td>N/A</td>
-                        <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNF</td>
                     </tr>
                     <tr>
                         <td>6</td>
@@ -244,14 +210,15 @@
                         <td>N/A</td>
                         <td>23:59:59.000</td>
                         <td>N/A</td>
+                            <td></td>
                         <td></td>
-                        <td class="bold"></td>
+                        <td class="bold">DNS</td>
                     </tr>
                 </tbody>
 
             </table>
             <div style="margin:0 auto; text-align:center;">
-                <p>last updated at: 2022-09-16T07:07:11Z</p>
+                <p>last updated at: 2022-09-19T04:54:11Z</p>
             </div>
         </div>
     </div>
