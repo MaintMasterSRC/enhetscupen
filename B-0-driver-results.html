@@ -23,11 +23,11 @@
                 <img src="./assets/maintmaster.png">
             </a>
             <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-hide-small w3-hide-medium">
-                <span class="w3-bar-item">---series---</span>
+                <span class="w3-bar-item">---serier---</span>
                     <a href="/" class="w3-bar-item w3-button ">MaintMaster</a>
                     <a href="/supercupen" class="w3-bar-item w3-button ">Supercupen</a>
                     <a href="/supportserien" class="w3-bar-item w3-button ">Supportserien</a>
-                <span class="w3-bar-item">---historical---</span>
+                <span class="w3-bar-item">---historiska---</span>
                     <a href="/season5" class="w3-bar-item w3-button ">MaintMaster s5</a>
                     <a href="/season5/supportserien" class="w3-bar-item w3-button ">Supportserien s5</a>
                     <a href="/season5/enhetscupen" class="w3-bar-item w3-button ">Enhetscupen s5</a>
@@ -56,6 +56,12 @@
 		</div>
 
 
+		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
+			<div class="logo">
+				<img src="./assets/country-flags/scot.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
+			</div>
+			<span id="countdown2"></span>
+		</div>
 
         <!-- mobile stuff -->
         <a href="javascript:void(0)" class="logo w3-left w3-hide-large" style="font-size:3em;" onclick="openSeriesMobileNav()">
@@ -67,7 +73,7 @@
 
         <h3 class="w3-hide-large navTitle bold" style="display:block;">
             driver - B
-            
+            <br><span id="countdown"></span>
         </h3>
 
 	</div>
@@ -108,8 +114,44 @@
 			<a href="./B-3-driver-results.html">
 				<img src="./assets/country-flags/swe.png" />
 			</a>
+			<a href="./B-4-driver-results.html">
+				<img src="./assets/country-flags/scot.png" />
+			</a>
 	</div>
 </div>
+<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("2022-12-11T23:00:00Z").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// Output the result in an element with id="demo"
+	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+
+	// If the count down is over, write some text
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "Event Ended";
+		document.getElementById("countdown2").innerHTML = "Event Ended";
+	}
+	}, 1000);
+</script>
 
 <div id="container">
     <div id="flexContainer">
@@ -127,6 +169,7 @@
                     <th>Pos</th>
                     <th>Nat</th>
                     <th>Förare</th>
+                            <th>Team</th>
                         <th>Bil</th>
                     <td>PS</td>
                     <td>Diff</td>
@@ -144,6 +187,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Jonas Lund</td>
+                                <td class="text-left">Wermland Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -161,6 +205,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Andreas Persson</td>
+                                <td class="text-left">Kapow Racing Sverige</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -178,6 +223,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Henrik Janson</td>
+                                <td class="text-left">Castrol Team Sweden</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -195,6 +241,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Peter Dahlström</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -212,6 +259,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Mikael Dyrenius</td>
+                                <td class="text-left">Kapow Racing Finland</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -229,6 +277,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Marko Nevalainen</td>
+                                <td class="text-left">Wermland Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -246,6 +295,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Stefan Magnusson</td>
+                                <td class="text-left">Castrol Team Sweden</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -263,6 +313,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Tomas Eriksson</td>
+                                <td class="text-left">Castrol Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -280,6 +331,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Martin Zirnsack</td>
+                                <td class="text-left">Castrol Team Sweden</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -297,6 +349,7 @@
                             <img src="./assets/country-flags/fin.png" style="max-width:1.5em; max-height:1.5em;" alt="fin" title="fin"/>
                         </td>
                         <td class="text-left bold">Magnus Bergström</td>
+                                <td class="text-left">Kapow Racing Finland</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -314,6 +367,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Staffan Magnusson</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -331,6 +385,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Mattias Lagerqvist</td>
+                                <td class="text-left">Kapow Racing Finland</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -348,6 +403,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Jonas Otterwall</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -365,6 +421,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Magnus Carlsson</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -382,12 +439,16 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Jörgen Jakobsson</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
                         <td>15:00.000</td>
                         <td>+00:11:16.961</td>
-                        <td>02:06:05.735</td>
+                        <td class="popup" onclick="openPopup('jojja WRCK')">
+                            02:06:05.735
+                            <span class="popuptext" id="jojja WRCK">val av fel bil</span>
+                        </td>
                         <td>+01:33:48.488</td>
                             <td></td>
                         <td></td>
@@ -399,6 +460,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Fredrik Eklöf</td>
+                                <td class="text-left">Wermland Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -416,6 +478,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Emil Mikaelsson</td>
+                                <td class="text-left">Castrol Team Sweden</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -433,6 +496,7 @@
                             <img src="./assets/country-flags/ukr.png" style="max-width:1.5em; max-height:1.5em;" alt="ukr" title="ukr"/>
                         </td>
                         <td class="text-left bold">Daniel Larsson</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -450,6 +514,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Björn Hvit</td>
+                                <td class="text-left">Castrol Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -467,6 +532,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Mikael Bylund</td>
+                                <td class="text-left">Team Alfa</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -484,6 +550,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Pierre Andersson</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -501,6 +568,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Ingemar Allerdahl</td>
+                                <td class="text-left">Team Alfa</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -518,6 +586,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Jesper Fröjd</td>
+                                <td class="text-left">Kapow Racing Sverige</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -535,6 +604,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Pierre Tillaeus</td>
+                                <td class="text-left">Castrol Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/audi.png" style="max-width:2em; max-height:2em;" alt="audi" title="audi"/>
                                 </td>
@@ -552,6 +622,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Peter Friman</td>
+                                <td class="text-left">privateer</td>
                                 <td>
                                     <img src="./assets/cars/subaru.png" style="max-width:2em; max-height:2em;" alt="subaru" title="subaru"/>
                                 </td>
@@ -569,6 +640,7 @@
                             <img src="./assets/country-flags/swe.png" style="max-width:1.5em; max-height:1.5em;" alt="swe" title="swe"/>
                         </td>
                         <td class="text-left bold">Robin Wiberg</td>
+                                <td class="text-left">Castrol Rally Team</td>
                                 <td>
                                     <img src="./assets/cars/subaru.png" style="max-width:2em; max-height:2em;" alt="subaru" title="subaru"/>
                                 </td>
@@ -584,7 +656,7 @@
 
             </table>
             <div style="margin:0 auto; text-align:center;">
-                <p>Senast uppdaterad vid: 2022-12-01T07:19:18Z</p>
+                <p>Senast uppdaterad vid: 2022-12-08T14:17:00Z</p>
             </div>
         </div>
     </div>
@@ -610,6 +682,11 @@
         } else {
             closeNav(navId);
         }
+    }
+    // When the user clicks on div, open the popup
+    function openPopup(id) {
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
     }
 </script>
 
