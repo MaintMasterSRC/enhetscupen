@@ -56,6 +56,12 @@
 		</div>
 
 
+		<div class="w3-bar-item w3-right w3-hide-small w3-hide-medium">
+			<div class="logo">
+				<img src="./assets/country-flags/mco.png" style="max-height: 0.9em;border-radius: 0.3em;"/>
+			</div>
+			<span id="countdown2"></span>
+		</div>
 
         <!-- mobile stuff -->
         <a href="javascript:void(0)" class="logo w3-left w3-hide-large" style="font-size:3em;" onclick="openSeriesMobileNav()">
@@ -67,7 +73,7 @@
 
         <h3 class="w3-hide-large navTitle bold" style="display:block;">
             driver - C
-            
+            <br><span id="countdown"></span>
         </h3>
 
 	</div>
@@ -117,8 +123,44 @@
 			<a href="./C-6-driver-results.html">
 				<img src="./assets/country-flags/fin.png" />
 			</a>
+			<a href="./C-7-driver-results.html">
+				<img src="./assets/country-flags/mco.png" />
+			</a>
 	</div>
 </div>
+<script>
+	// Set the date we're counting down to
+	var countDownDate = new Date("2023-01-29T23:00:00Z").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	// Get today's date and time
+	var now = new Date().getTime();
+
+	// Find the distance between now and the count down date
+	var distance = countDownDate - now;
+
+	// Time calculations for days, hours, minutes and seconds
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// Output the result in an element with id="demo"
+	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+	document.getElementById("countdown2").innerHTML = days + "d " + hours + "h "
+	+ minutes + "m " + seconds + "s ";
+
+	// If the count down is over, write some text
+	if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("countdown").innerHTML = "Event Ended";
+		document.getElementById("countdown2").innerHTML = "Event Ended";
+	}
+	}, 1000);
+</script>
 
     <div id="container">
         <div id="flexContainer">
@@ -182,6 +224,12 @@
                                 </a>
                             </th>
 
+                            <th>
+                                <a href="./C-7-driver-results.html">
+                                    <img src="./assets/country-flags/mco.png" alt="mco" title="mco"/>
+                                </a>
+                            </th>
+
                             <th>Poäng</th>
                         </tr>
                     </thead>
@@ -228,6 +276,10 @@
                                 21
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">189</td>
                         </tr>
                         <tr style="background-color: ">
@@ -270,6 +322,10 @@
                             
                             <td>
                                 29
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">186</td>
@@ -317,6 +373,10 @@
                                 35
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">181</td>
                         </tr>
                         <tr style="background-color: ">
@@ -360,6 +420,10 @@
                             
                             <td>
                                 24
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">180</td>
@@ -407,6 +471,10 @@
                                 28
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">104</td>
                         </tr>
                         <tr style="background-color: ">
@@ -452,6 +520,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">103</td>
                         </tr>
                         <tr style="background-color: ">
@@ -494,6 +566,10 @@
                             
                             <td>
                                 DNS
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">75</td>
@@ -541,6 +617,10 @@
                                 17
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">65</td>
                         </tr>
                         <tr style="background-color: ">
@@ -586,6 +666,10 @@
                                 DNF
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">59</td>
                         </tr>
                         <tr style="background-color: ">
@@ -628,6 +712,10 @@
                             
                             <td>
                                 15
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">58</td>
@@ -675,6 +763,10 @@
                                 22
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">39</td>
                         </tr>
                         <tr style="background-color: ">
@@ -718,6 +810,10 @@
                             
                             <td>
                                 DNS
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">35</td>
@@ -765,6 +861,10 @@
                                 DNF
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">28</td>
                         </tr>
                         <tr style="background-color: ">
@@ -808,6 +908,10 @@
                             
                             <td>
                                 25
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">25</td>
@@ -855,6 +959,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">25</td>
                         </tr>
                         <tr style="background-color: ">
@@ -898,6 +1006,10 @@
                             
                             <td>
                                 DNS
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">17</td>
@@ -945,6 +1057,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">16</td>
                         </tr>
                         <tr style="background-color: ">
@@ -988,6 +1104,10 @@
                             
                             <td>
                                 DNF
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">15</td>
@@ -1035,6 +1155,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">15</td>
                         </tr>
                         <tr style="background-color: ">
@@ -1078,6 +1202,10 @@
                             
                             <td>
                                 DNS
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">0</td>
@@ -1125,6 +1253,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">0</td>
                         </tr>
                         <tr style="background-color: ">
@@ -1168,6 +1300,10 @@
                             
                             <td>
                                 DNS
+                            </td>
+                            
+                            <td>
+                                
                             </td>
                             
                             <td class="bold">0</td>
@@ -1215,6 +1351,10 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">0</td>
                         </tr>
                         <tr style="background-color: ">
@@ -1260,13 +1400,17 @@
                                 DNS
                             </td>
                             
+                            <td>
+                                
+                            </td>
+                            
                             <td class="bold">0</td>
                         </tr>
                     </tbody>
 
                 </table>
                 <div style="margin:0 auto; text-align:center;">
-                    <p>Senast uppdaterad vid: 2023-01-25T18:11:11Z</p>
+                    <p>Senast uppdaterad vid: 2023-01-25T19:08:13Z</p>
                 </div>
             </div>
         </div>
